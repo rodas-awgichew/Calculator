@@ -7,6 +7,31 @@ body{
     font-family: 'Segoe UI', sans-serif;
 
 }
+#dark-toggle{
+    border-radius: 12px;
+    color: #f4f4f4;
+    background-color: #2a2a2a;
+}
+body.dark-mode {
+    background-color: #f4f4f4;
+  }
+  
+body.dark-mode .calculator,
+body.dark-mode .title,
+body.dark-mode .buttons {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+body.dark-mode #result {
+    background-color: #ddd;
+    color: #222;
+  }
+  
+body.dark-mode button {
+    background-color: rgb(241, 240, 240);
+    color: #111;
+  }
 .calculator{
     background: #2a2a2a;
     padding: 20px;

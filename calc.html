@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="calculator">
+    <button id="dark-toggle">dark mode</button>
     <h1 class="title">Calculator</h1>
     <input type="text" id="result" readonly />
     <div class="buttons">
@@ -39,6 +40,10 @@
 
 </body>
 <script>
+  const toggle = document.getElementById("dark-toggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
     const display = document.getElementById("result");
   
     document.querySelectorAll(".buttons button").forEach((button) => {
